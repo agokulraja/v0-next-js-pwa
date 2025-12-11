@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "DEEP Trust - Then. Now. Always.",
     short_name: "DEEP Trust",
-    description: "DEEP Trust PWA - Education, Healthcare, Livelihood, and Environmental initiatives",
+    description: "DEEP Trust - Education, Healthcare, Livelihood, and Environmental initiatives",
     start_url: "/",
     scope: "/",
     display: "standalone",

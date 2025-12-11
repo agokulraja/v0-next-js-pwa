@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "DEEP Trust - Then. Now. Always.",
   description:
-    "DEEP Trust PWA - Education, Healthcare, Livelihood, and Environmental initiatives for community empowerment",
+    "DEEP Trust - Education, Healthcare, Livelihood, and Environmental initiatives for community empowerment",
   generator: "v0.app",
   manifest: "/manifest.json",
   appleWebApp: {
