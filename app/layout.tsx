@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DEEP Trust - Helping Hands, Healing Hearts",
+  title: "DEEP Trust - Then. Now. Always.",
   description:
     "DEEP Trust PWA - Education, Healthcare, Livelihood, and Environmental initiatives for community empowerment",
   generator: "v0.app",
@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-192x192.jpg",
+        url: "/deepapp_128x128.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        url: "/icon-512x512.jpg",
+        url: "/deepapp_128x128.png",
         sizes: "512x512",
         type: "image/png",
       },
     ],
-    apple: "/icon-192x192.jpg",
+    apple: "/deepapp_128x128.png",
   },
 }
 
