@@ -77,7 +77,57 @@ export default function Install() {
               </p>
             </div>
 
-            {/* Our Work Areas */}
+           
+          </div>
+
+
+          {/* Impact Stats - Grid Layout */}
+            <div className="animate-in fade-in duration-500">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center">Our Impact</h2>
+
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-4">
+                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">50k+</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Children Educated</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">400k+</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Health Beneficiaries</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">30k+</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Livelihood Empowered</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">20k+</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Environment Impact</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow col-span-2">
+                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">65k+</p>
+                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Police Screened</p>
+                </div>
+              </div>
+            </div>
+
+          {/* Action Buttons */}
+          <div className="space-y-3 pt-4">
+            <button
+              onClick={handleInstall}
+              className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-linear-to-r from-orange-500 to-amber-500 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all active:scale-95 shadow-md"
+            >
+              <Download className="w-5 h-5" />
+              Install App
+            </button>
+            <button
+              onClick={() => router.push("/")}
+              className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-gray-900 rounded-xl font-semibold border-2 border-orange-300 hover:bg-orange-50 transition-all active:scale-95"
+            >
+              <ExternalLink className="w-5 h-5" />
+              Continue to Website
+            </button>
+          </div>
+
+           {/* Our Work Areas */}
             <div className="space-y-3 mt-10">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center">Our Work Areas</h2>
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -106,55 +156,8 @@ export default function Install() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Action Buttons */}
-          <div className="space-y-3 pt-4">
-            <button
-              onClick={handleInstall}
-              className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-linear-to-r from-orange-500 to-amber-500 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all active:scale-95 shadow-md"
-            >
-              <Download className="w-5 h-5" />
-              Install App
-            </button>
-            <button
-              onClick={() => router.push("/")}
-              className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-gray-900 rounded-xl font-semibold border-2 border-orange-300 hover:bg-orange-50 transition-all active:scale-95"
-            >
-              <ExternalLink className="w-5 h-5" />
-              Continue to Website
-            </button>
-          </div>
-
-          {/* Impact Stats - Grid Layout */}
-          {showStats && (
-            <div className="animate-in fade-in duration-500">
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center">Our Impact</h2>
-
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-4">
-                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">50k+</p>
-                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Children Educated</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">400k+</p>
-                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Health Beneficiaries</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">30k+</p>
-                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Livelihood Empowered</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">20k+</p>
-                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Environment Impact</p>
-                </div>
-                <div className="bg-white rounded-xl p-4 sm:p-5 border-2 border-orange-100 shadow-sm hover:shadow-md transition-shadow col-span-2">
-                  <p className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">65k+</p>
-                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-1">Police Screened</p>
-                </div>
-              </div>
-            </div>
-          )}
+          
         </div>
       </section>
 
