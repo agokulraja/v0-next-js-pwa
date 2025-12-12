@@ -22,7 +22,7 @@ export default function Home() {
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault()
       promptReceived = true
-      router.push("/install")
+      // router.push("/install")
       clearTimeout(promptTimeout)
     }
 
@@ -52,7 +52,10 @@ export default function Home() {
       {/* Embedded Website */}
       <div className="relative w-full h-screen bg-gray-100">
         {!iframeLoaded && !hideLoadingScreen && (
-          <div className="absolute inset-0 bg-linear-to-br from-orange-50 to-amber-50 flex items-center justify-center z-10 animate-out fade-out duration-500" style={{ animationDelay: hideLoadingScreen ? "0s" : "10s" }}>
+          <div
+            className="absolute inset-0 bg-linear-to-br from-orange-50 to-amber-50 flex items-center justify-center z-10 animate-out fade-out duration-500"
+            style={{ animationDelay: hideLoadingScreen ? "0s" : "10s" }}
+          >
             <div className="text-center space-y-4">
               <Image
                 src="/deepapp_128x128.png"
@@ -66,8 +69,14 @@ export default function Home() {
                 <p className="text-gray-600 font-medium text-sm">Loading DEEP India...</p>
                 <div className="flex justify-center gap-1">
                   <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-                  <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{ animationDelay: "0.2s" }}></div>
-                  <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{ animationDelay: "0.4s" }}></div>
+                  <div
+                    className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"
+                    style={{ animationDelay: "0.2s" }}
+                  ></div>
+                  <div
+                    className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"
+                    style={{ animationDelay: "0.4s" }}
+                  ></div>
                 </div>
               </div>
             </div>
